@@ -1,0 +1,488 @@
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   background: transparent;
+   font-family: 'Poppins', sans-serif; 
+}
+
+body{
+   background-color: black;
+    color: white;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.navbar{
+    height: 5rem;
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 0;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background: black;
+}
+
+.logo{
+    object-fit: cover;
+    height: 3rem;
+    width: 4rem;
+}
+
+.desktopmenulistitem{
+    margin: 1rem;
+    cursor: pointer;
+  
+}
+
+
+.desktopmenulistitem:hover{
+color: yellow;
+padding-bottom:0.5rem;
+border-bottom: 3px solid yellow;
+
+}
+.desktopmenubtn{
+    background: white;
+    color: black;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+padding: 0 1rem;
+border-radius: 1rem;
+}
+.desktopmenuimg{
+    object-fit: cover;
+    height: 1rem;
+    width: 1rem;
+    margin: 1rem;
+
+}
+
+#intro{
+    height: calc(100vh- 4rem);
+     width: 100vw;
+     max-width: 75rem;
+     margin: 0 auto;
+     overflow: hidden;
+     position: relative;
+}
+
+.bg{
+    position: absolute;
+    top: -4rem;
+    right: 20px;
+    border-radius: 5%;
+    z-index: -1;
+    object-fit: cover;
+    height: 100vh;
+width: 40vw;
+
+
+}
+
+.introcontent{
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.hello{
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+.introname{
+    color: yellow;
+}
+
+.intropara{
+    font-size: medium;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.btn{
+    background: white;
+    font-weight: bold;
+    margin: 1rem 0;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    width: 270px;
+    height: 70px;
+}
+
+.btn:hover{
+    background: rgb(7, 102, 123);
+    color: white;
+    font-weight: bold;
+    margin: 1rem 0;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    width: 270px;
+    height: 70px;
+}
+
+/* .btnImg{
+    object-fit: cover;
+    margin: 0 1.5rem;
+    height: 1rem;
+   
+} */
+
+
+/* skills section */
+
+#skills{
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 0;
+
+}
+
+.skilltitle{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+
+}
+
+.skillDesc{
+    font-weight: 400;
+    font-size: 0.9rem;
+    max-width: 50rem;
+    padding: 0 2rem;
+}
+
+.skillbars{
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: left;
+}
+
+.skillbar{
+    display: flex;
+    margin: 1rem;
+    padding: 1.5 2rem;
+    border-radius: 0.5rem;
+    background: rgb(17, 19, 17);
+}
+
+
+.skillbar:hover{
+    display: flex;
+    margin: 1rem;
+    padding: 1.5 2rem;
+    border-radius: 0.5rem;
+    background: rgb(63, 61, 62);
+}
+.skillbarimg{
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 2rem;
+}
+
+.skillbartext>p{
+font-size: 0.9rem;
+font-weight: 200;
+}
+
+@media screen and (max-width:480px){
+  .skillbartext>p{
+    font-size: 3vw;
+  }  
+
+  .skillbarimg{
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+
+  .skillbartext>h1{
+     font-size: 5vw;
+  }
+  .skillbar:hover{
+    background: green;
+  }
+}
+
+
+
+/* works section */
+
+
+#works{
+    margin: 0 auto;
+    min-height: calc(100vh- 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.workstitle{
+    /* margin: 1rem 0;
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem; */
+    /* margin-bottom: 1.5rem; */
+    font-size: 3rem;
+    margin-bottom: 1rem;
+text-align: center;
+}
+
+.worksDesc{
+font-weight: 300;
+font-size: 1rem;
+max-width: 45rem;
+}
+img{
+border-radius: 5%;
+height: 70px;
+width: 45vw;
+}
+.workImgs{
+    display: grid;
+    grid-template-rows: auto;
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    max-width: 65rem;
+    border-radius: 17px;
+
+}
+
+.workImg{
+
+    object-fit: cover;
+    height: 20rem;
+    margin: 0.5rem;
+}
+
+.workBtn{
+  
+    padding: 0.5rem 2.5rem;
+    border: none;
+    border-radius: 2rem;
+    background: white;
+    font-size:1rem;
+    margin: 3rem 0;
+    align-items: center;
+    
+}
+
+@media screen and (max-width:585px) {
+    .workImg{
+        height: 48vw;
+    }
+    .workImgs{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        max-width: 65rem;
+        border-radius: 17px;
+    }
+}
+
+
+/* contact section */
+
+
+#contactpage{
+    min-height: calc(100vh-4rem);
+    width: 100vw;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactpagetitle{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+text-align: center;
+}
+
+.clientdesc{
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.clientImgs{
+    width: 170px;
+    margin: 1rem 0;
+    /* gap: 12px; */
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+/* flex-wrap: wrap; */
+
+}
+
+.clientimg{
+    object-fit: cover;
+    width: 23%;
+    min-width: 9rem;
+    margin: auto;
+    padding: 0.25rem;
+}
+
+#clients{
+    padding: 2rem;
+}
+
+
+
+.contactdesc{
+    padding: 1rem;
+    font-size: medium;
+    font-weight: 400;
+
+}
+
+.contactform{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: 60rem;
+}
+
+.name .email .msg{
+    font-size: medium;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    background: grey;
+}
+
+.submitbtn{
+    background: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 3.5rem;
+    margin: 2rem;
+
+}
+
+.links{
+    display: flex;
+    /* flex-wrap: wrap; */
+   width: 290px;
+flex-direction: row;
+gap: 22px;
+}
+
+.link{
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin: 0 0.75rem;
+
+}
+
+
+.footer{
+    width: 100vw;
+    height: 4rem;
+    background: darkgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    font-size: small;
+}
+
+
+.active{
+    color: yellow;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid yellow;
+}
+
+.mobMenu{
+    display: none;
+    object-fit: cover;
+    height: 1rem;
+    width: 40px;
+}
+
+.navMenu{
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height:fit-content;
+    min-width: 15rem;
+    background: rgb(40,40,40);
+    border-radius: 1rem;
+
+}
+
+.listItem{
+color: white;
+padding: 0.5rem 3rem;
+margin: 0.25rem;
+background: rgb(30,30,30);
+}
+
+
+@media screen and (max-width:667px){
+.mobMenu{
+    display: flex;
+
+}
+
+.desktopMenu{
+    display: none;
+
+}
+
+.desktopmenubtn{
+    display: none;
+}
+}
